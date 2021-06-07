@@ -1,0 +1,10 @@
+<% if @questions == 'I am going to work' %>
+  <p><%="Great"%></p>
+<% elsif @questions.include?('?') %>
+  <p><%='Silly question, get dressed and go to work!'%></p>
+<% else %>
+  <p><%="I don't care, get dressed and go to work!"%></p>
+<% end %>
+
+<%= link_to "Know more about us", ask_path %>
+
